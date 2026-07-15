@@ -4,6 +4,6 @@ provider "aws" {
     secret_key = ""
 }
 
-resource "aws_s3" "Testak_s3" {
+resource "aws_s3_bucket" "Testak_s3" {
     bucket = "testak-s3bucket"
 }
