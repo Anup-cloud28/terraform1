@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "AkTestinstance" {
     ami = "ami-0b6d9d3d33ba97d99"
     instance_type = "t3.micro"
-    security_groups = [aws_security_group.TestSG.id]
+    security_groups = [aws_security_group.TestSG.name]
 }
 
 resource "aws_security_group" "TestSG" {
